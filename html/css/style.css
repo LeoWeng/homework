@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* clearfix */
+.cf { zoom: 1; }
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+
+/* For Smart Phone*/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.15em;
+  line-height: 1.55em;
+  background-color: #333333;
+}
+header {
+  padding: 0;
+  background-color: #333333;
+}
+header h1 {
+  font-size: 2.2em;
+  padding: 0.4em 0 0.4em 0;
+  margin: 0 0 0.2em;
+  text-align: center;
+  color: #ffffff;
+}
+#contents {
+  width: 80%;
+  margin: 1em auto 1em;
+}
+#contents h1 {
+  font-weight: bold;
+  color: #ffffff;
+}
+section {
+  margin: 0 0 1em 0;
+}
+aside > section{
+  height:100px;
+  background-color: #ecc75a;
+  padding: 15px 0 0 20px;
+}
+article > section{
+  border-bottom: 1px solid #ccc;
+  color: #ecc75a;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Media Querie Switch */
+
+/* For Tablet：481px ～ 768px */
+@media only screen and (min-width: 481px) {
+ #contents_menu1 {
+   width: 45%;
+   float: left;
+ }
+ #contents_menu2 {
+   width: 45%;
+   float: right;
+ }
+}
+
+/*  For Laptop：769px～960px */
+@media only screen and (min-width: 769px) {
+ article.main {
+   width: 65%;
+   float: right;
+ }
+ aside.contents_menu {
+   width: 30%;
+   float: left;
+ }
+ aside.contents_menu ul li {
+   font-size: 1.1em;
+ }
+ #contents_menu1,
+ #contents_menu2 {
+   width: 95%;
+   float: none;
+ }
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers td:hover {background-color: #ddd;}
+
+#customers tr:nth-child(1) td,
+#customers tr td:nth-child(1) {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
