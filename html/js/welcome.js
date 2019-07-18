@@ -11,7 +11,7 @@ var math99 = {
 			mathTable=mathTable+"<tr>"
 			for(j=0;j<N+1;j++)
 				if(i===0 && j===0)
-					mathTable=mathTable+"<td>99X</td>";
+					mathTable=mathTable+"<td>"+N+"X"+N+"</td>";
 				else if(i===0)
 					mathTable=mathTable+"<td>被乘數："+j+"</td>";
 				else if(j===0)
